@@ -16,10 +16,18 @@ Description goes here
 Here's how you make code look like code:
 
 ```python
-Code goes here
+import board
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+
+print("Make it red!")
+
+while True:
+    dot.fill((255,0,0))
 
 ```
-
+[link to live code here](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
 
 ### Evidence
 Pictures / Gifs of your work should go here
