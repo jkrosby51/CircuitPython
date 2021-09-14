@@ -1,4 +1,3 @@
-"""CircuitPython Essentials Servo standard servo example"""
 # https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo
 import time
 import board
@@ -6,35 +5,33 @@ import pwmio
 import touchio
 import servo
 
-dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
-#
-#Servo
-#
-######
-#pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
-#my_servo = servo.Servo(pwm)
-#
-#while True:
-#    for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
-#        my_servo.angle = angle
-#        time.sleep(0.05)
-#    for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
-#        my_servo.angle = angle
-#        time.sleep(0.05)
-######
+touch_pad1 = board.A3
+touch_pad2 = board.A5
 
-#
-# Cap Touch
-#
+touch1 = touchio.TouchIn(touch_pad1)
+touch2 = touchio.TouchIn(touch_pad2)
 
-touch_A1 = touchio.TouchIn(board.A2)  # Not a touch pin on Trinket M0!
-touch_A2 = touchio.TouchIn(board.A3)  # Not a touch pin on Trinket M0!
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+my_servo = servo.Servo(pwm)
+
+angle = 90
 
 while True:
-    if touch_A1.value:
-        print("Touched A2!")
-        dot.fill((255,0,0))
-    if touch_A2.value:
-        print("Touched A3!")
-        dot.fill((0,0,255))
+    if touch1.value:
+        print("#1 Touched")
+    if touch2.value:
+        print("#2 Touched")
+
+    if angle < 180 and touch1.value:
+
+        angle = angle + 5
+        my_servo.angle = angle
+        print("angle: ", angle)
+    if angle > 0 and touch2.value:
+        angle = angle - 5
+        my_servo.angle = angle
+        print("angle: ", angle)
+
     time.sleep(0.05)
+
+
