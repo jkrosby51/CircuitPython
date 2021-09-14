@@ -11,28 +11,14 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+Make the neopixel red
 
-Here's how you make code look like code:
-
-```python
-import board
-import neopixel
-
-dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
-
-print("Make it red!")
-
-while True:
-    dot.fill((255,0,0))
-
-```
-[link to live code here](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
+[Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
 
 ### Evidence
 Pictures / Gifs of your work should go here
 
-### Images
+### Wiring
 Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
 Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://www.markdownguide.org/basic-syntax/)
 
@@ -40,24 +26,30 @@ Then post an image here.   [here's a quick tutorial for all markdown code, like 
 Challenges with updates made it difficult to complete the assignment at first but when that was fixed it was easy.
 
 
-
-
 ## CircuitPython_Servo
 
 ### Description & Code
+Using capacative touch to move a servo.
 
+This code is for controlling the angle of the servo with the cap touch
 ```python
-Code goes here
-
+    if angle < 180 and touch1.value:
+        angle = angle + 5
+        my_servo.angle = angle
+        print("angle: ", angle)
+    if angle > 0 and touch2.value:
+        angle = angle - 5
+        my_servo.angle = angle
+        print("angle: ", angle)
 ```
+[Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/ServoCapTouch.py)
 
 ### Evidence
-
-### Images
+[Video](https://nv.instructuremedia.com/fetch/QkFoYkIxc0hhUVJHdWtZV01Hd3JCeWIvUVdFPS0tODIxMzAwNDM2YmRjMjdlYWY1NDI1OTY5NzY2OWFjZDkwNDkwZWMyNg.mp4)
+### Wiring
 
 ### Reflection
-
-
+I learned more about the basics of Circuit Python, as well as how to use capacative touch and how it can be useful in the future.
 
 
 ## CircuitPython_LCD
@@ -71,7 +63,7 @@ Code goes here
 
 ### Evidence
 
-### Images
+### Wiring
 
 ### Reflection
 
@@ -90,6 +82,6 @@ Code goes here
 
 ### Evidence
 
-### Images
+### Wiring
 
 ### Reflection
