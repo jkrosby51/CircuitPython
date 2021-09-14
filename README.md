@@ -45,9 +45,9 @@ This code is for controlling the angle of the servo with the cap touch
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/ServoCapTouch.py)
 
 ### Evidence
-[Video](https://nv.instructuremedia.com/fetch/QkFoYkIxc0hhUVJHdWtZV01Hd3JCeWIvUVdFPS0tODIxMzAwNDM2YmRjMjdlYWY1NDI1OTY5NzY2OWFjZDkwNDkwZWMyNg.mp4)
+[Video](https://github.com/jkrosby51/CircuitPython/blob/main/Videos/ServoCapTouch%20-%20Video.mp4)
 ### Wiring
-
+![Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ServoCapTouch%20Wiring.jpg)
 ### Reflection
 I learned more about the basics of Circuit Python, as well as how to use capacative touch and how it can be useful in the future.
 
