@@ -11,7 +11,7 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-Make the neopixel red
+Using CircuitPython to change the RGB value of the Metro Express neopixel.
 
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
 
@@ -22,7 +22,7 @@ Make the neopixel red
 N/A
 
 ### Reflection
-Challenges with updates made it difficult to complete the assignment at first but when that was fixed it was easy.
+Once the Metro was fully updated and the correct libraries were found, this assignment was easy.
 
 
 ## CircuitPython_Servo
@@ -30,7 +30,7 @@ Challenges with updates made it difficult to complete the assignment at first bu
 ### Description & Code
 Using capacative touch to move a servo.
 
-This code is for controlling the angle of the servo with the cap touch
+I used this part of the code in order to move the servo when the wires were touched, without letting the angle value go past 180 or 0.
 ```python
     if angle < 180 and touch1.value:
         angle = angle + 5
@@ -48,7 +48,23 @@ This code is for controlling the angle of the servo with the cap touch
 ### Wiring
 ![Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ServoCapTouch%20Wiring.jpg)
 ### Reflection
-I learned more about the basics of Circuit Python, as well as how to use capacative touch and how it can be useful in the future.
+Cap touch can be very useful for interaction (i.e. buttons) and is simple to code.
+
+
+## CircuitPython_Distance_Sensor
+
+### Description & Code
+Translating Distance values from a hcsr04 to rgb values for a neopixel.
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
 
 
 ## CircuitPython_LCD
