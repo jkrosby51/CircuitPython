@@ -16,7 +16,7 @@ Using CircuitPython to change the RGB value of the Metro Express neopixel.
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
 
 ### Evidence
-![Red LED](https://github.com/jkrosby51/CircuitPython/blob/main/Images/20210914_103706.jpg)
+![Red LED](https://github.com/jkrosby51/CircuitPython/blob/main/Images/HelloCircuitPython%20Evidence.jpg)
 
 ### Wiring
 N/A
@@ -44,7 +44,7 @@ I used this part of the code in order to move the servo when the wires were touc
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/ServoCapTouch.py)
 
 ### Evidence
-![gif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ezgif-4-b1361fa9f47f.gif)
+![gif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ServoCapTouch%20Gif.gif)
 ### Wiring
 ![Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ServoCapTouch%20Wiring.jpg)
 ### Reflection
