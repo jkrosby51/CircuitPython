@@ -77,7 +77,7 @@ elif cm < 35:
 ![Distance Sensor](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Gif.gif)
 
 ### Wiring
-
+![DistanceRGB Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Wiring.png)
 ### Reflection
 Simpleio Mapping can be useful for mapping values to different formats to be used as an input for another function. Keeping code organized makes it much easier to find errors and to avoid them in the first place.
 
