@@ -8,6 +8,7 @@
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
+
 ## Hello_CircuitPython
 
 ### Description & Code
@@ -81,23 +82,33 @@ elif cm < 35:
 ### Reflection
 Simpleio Mapping can be useful for mapping values to different formats to be used as an input for another function. Keeping code organized makes it much easier to find errors and to avoid them in the first place.
 
-## CircuitPython_LCD
+
+## CircuitPython_Photointerrupter 
 
 ### Description & Code
+This project counted how many times the photointeruppter detected interupts.
 
+This part of the code was in charge of making sure that it only counted once per interrupt (as opposed to it counting every tick where there was something blocking the laser)
 ```python
-Code goes here
-
+photo = interrupter.value
+    if photo and not state:
+            counter += 1
+    state = photo
 ```
+
+[Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/Photointerrupters.py)
 
 ### Evidence
 
+![photointerruptergif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterGif.gif)
+
 ### Wiring
+
+![photointerrupterwiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterWiring.jpg)
 
 ### Reflection
 
-
-
+The photointerrupter is a useful way to take inputs. In order to code the counter I had to make sure that it only counted when the sensor noticed a change in states, which I showed above.
 
 
 ## NextAssignment
