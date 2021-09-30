@@ -101,7 +101,7 @@ photo = interrupter.value
 ### Evidence
 
 ![photointerruptergif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterGif.gif)
-![photointerrupterseril](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterSerial.jpg)
+![photointerrupterserial](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterSerial.png)
 ### Wiring
 
 ![photointerrupterwiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/PhotointerrupterWiring.jpg)
