@@ -76,6 +76,7 @@ elif cm < 35:
 
 ### Evidence
 ![Distance Sensor](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Gif.gif)
+`Video taken by Andrew Dicesare`
 
 ### Wiring
 ![DistanceRGB Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Wiring.png)
