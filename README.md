@@ -62,13 +62,13 @@ Translating Distance values from a hcsr04 to rgb values for a neopixel.
 
 This section of the code was used to turn the Distance measurement to rgb values used to control the neopixel on the board.
 ```python
-elif cm < 20: // When within 19-5cm
- redValue = simpleio.map_range(cm, 5, 20, 255, 0) #Closer = more red
+elif cm < 20:  # When within 19-5cm
+ redValue = simpleio.map_range(cm, 5, 20, 255, 0)  # Closer = more red
  greenValue = 0
- blueValue = simpleio.map_range(cm, 5, 20, 0, 255) #Further = more blue
+ blueValue = simpleio.map_range(cm, 5, 20, 0, 255)  # Further = more blue
  print("RGB: (", redValue, ", ", greenValue, ", ", blueValue, ")")
  dot.fill((int(redValue), int(greenValue), int(blueValue)))
-elif cm < 35: // When within 34-20cm
+elif cm < 35:  # When within 34-20cm
  redValue = 0
  greenValue = simpleio.map_range(cm, 20, 35, 0, 255) #Further = more green
  blueValue = simpleio.map_range(cm, 20, 35, 255, 0) #Closer = more blue
