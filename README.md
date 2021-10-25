@@ -70,8 +70,8 @@ elif cm < 20:  # When within 19-5cm
  dot.fill((int(redValue), int(greenValue), int(blueValue)))
 elif cm < 35:  # When within 34-20cm
  redValue = 0
- greenValue = simpleio.map_range(cm, 20, 35, 0, 255) #Further = more green
- blueValue = simpleio.map_range(cm, 20, 35, 255, 0) #Closer = more blue
+ greenValue = simpleio.map_range(cm, 20, 35, 0, 255)  # Further = more green
+ blueValue = simpleio.map_range(cm, 20, 35, 255, 0)  # Closer = more blue
  print("RGB: (", redValue, ", ", greenValue, ", ", blueValue, ")")
  dot.fill((int(redValue), int(greenValue), int (blueValue)))
 ```
