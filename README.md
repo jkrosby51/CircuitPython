@@ -13,6 +13,9 @@
 
 ### Description & Code
 Using CircuitPython to change the RGB value of the Metro Express neopixel.
+```python
+dot.fill((255,0,0)) // Makes the neopixel red
+```
 
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/HelloWorld.py)
 
@@ -33,7 +36,7 @@ Using capacative touch to move a servo.
 
 I used this part of the code in order to move the servo when the wires were touched, without letting the angle value go past 180 or 0.
 ```python
-    if angle < 180 and touch1.value:
+    if angle < 180 and touch1.value: 
         angle = angle + 5
         my_servo.angle = angle
         print("angle: ", angle)
@@ -59,25 +62,25 @@ Translating Distance values from a hcsr04 to rgb values for a neopixel.
 
 This section of the code was used to turn the Distance measurement to rgb values used to control the neopixel on the board.
 ```python
-elif cm < 20:
- redValue = simpleio.map_range(cm, 5, 20, 255, 0)
+elif cm < 20: // When within 19-5cm
+ redValue = simpleio.map_range(cm, 5, 20, 255, 0) //Closer = more red
  greenValue = 0
- blueValue = simpleio.map_range(cm, 5, 20, 0, 255)
+ blueValue = simpleio.map_range(cm, 5, 20, 0, 255) //Further = more blue
  print("RGB: (", redValue, ", ", greenValue, ", ", blueValue, ")")
  dot.fill((int(redValue), int(greenValue), int(blueValue)))
-elif cm < 35:
+elif cm < 35: // When within 34-20cm
  redValue = 0
- greenValue = simpleio.map_range(cm, 20, 35, 0, 255)
- blueValue = simpleio.map_range(cm, 20, 35, 255, 0)
+ greenValue = simpleio.map_range(cm, 20, 35, 0, 255) //Further = more green
+ blueValue = simpleio.map_range(cm, 20, 35, 255, 0) //Closer = more blue
  print("RGB: (", redValue, ", ", greenValue, ", ", blueValue, ")")
  dot.fill((int(redValue), int(greenValue), int (blueValue)))
 ```
 [Full Code](https://github.com/jkrosby51/CircuitPython/blob/main/DistanceRGB.py)
 
 ### Evidence
-![Distance Sensor](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Gif.gif)
+![Distance Sensor](https://github.com/jkrosby51/CircuitPython/blob/main/Images/gabyD-DistanceRGB.gif)
 
-`Video taken by Andrew Dicesare`
+[GIF Credit](https://github.com/gdaless20/Circuitpython#CircuitPython_Distance_Servo)
 
 ### Wiring
 ![DistanceRGB Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Wiring.png)
