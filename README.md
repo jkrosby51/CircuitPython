@@ -4,8 +4,8 @@
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_LCD](#CircuitPython_LCD)
-* [NextAssignmentGoesHere](#NextAssignment)
+* [CircuitPython_Distance Sensor](#CircuitPython_Distance_Sensor)
+* [CircuitPython_Photointerrupter](#CircuitPython_Photointerrupter)
 ---
 
 
@@ -76,6 +76,8 @@ elif cm < 35:
 
 ### Evidence
 ![Distance Sensor](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Gif.gif)
+
+`Video taken by Andrew Dicesare`
 
 ### Wiring
 ![DistanceRGB Wiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/DistanceRGB%20Wiring.png)
