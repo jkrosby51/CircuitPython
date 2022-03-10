@@ -7,6 +7,7 @@
 * [CircuitPython_Distance Sensor](#CircuitPython_Distance_Sensor)
 * [CircuitPython_Photointerrupter](#CircuitPython_Photointerrupter)
 * [RGB_Fading_LED](#RGB_Fading_LED)
+* [RGB_Color_LED](#RGB_Color_LED)
 ---
 
 
@@ -139,6 +140,53 @@ def fade(self):
 ### Evidence
 
 ![rgbFadeGif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ClassesGif.gif)
+
+### Wiring
+
+![rgbFadeWiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/RGBFadeWiring.jpg)
+
+### Reflection
+
+Modules and Classes are useful because they allow for simple repetition through the use of class objects to create variations of the original code without recoding anything.
+
+## RGB_Color_LED
+
+### Description & Code
+This assignment built off of the module and class from the assignment before, but used another module to adjust all pins at once to create unique colors.
+
+This section of the main file used the rgb module to change the colors of the LEDs
+```python
+while True:
+    '''Shines two RGB LEDs in opposing colours'''
+    myRGBled1.blue(half)
+    myRGBled2.yellow(half)
+    time.sleep(1)
+    myRGBled1.off()
+    myRGBled2.off()
+    time.sleep(2)
+
+    myRGBled1.red()
+    myRGBled2.cyan()
+    time.sleep(1)
+    myRGBled1.off()
+    myRGBled2.off()
+    time.sleep(2)
+
+    myRGBled1.green()
+    myRGBled2.magenta()
+    time.sleep(1)
+    myRGBled1.off()
+    myRGBled2.off()
+    time.sleep(2)
+
+    myRGBled1.Blinky(0.5) 
+    myRGBled2.Blinky(0.5) 
+    time.sleep(3)
+```
+
+### Evidence
+
+![rgbColorGif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/rgbColorWiring.gif)
 
 ### Wiring
 
