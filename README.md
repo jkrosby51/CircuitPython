@@ -6,6 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Distance Sensor](#CircuitPython_Distance_Sensor)
 * [CircuitPython_Photointerrupter](#CircuitPython_Photointerrupter)
+* [RGB Fading LED](#RGB Fading LED)
 ---
 
 
