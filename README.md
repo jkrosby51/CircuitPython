@@ -116,6 +116,37 @@ photo = interrupter.value
 The photointerrupter is a useful way to take inputs. In order to code the counter I had to make sure that it only counted when the sensor noticed a change in states, which I showed above.
 
 
+## RGB Fading LED
+
+### Description & Code
+This assignment was to create a module with a class which could be used to make an RGB LED fade on and off.
+
+This section of the rgb module made the given LED pin fade to max and then back to min.
+```python
+def fade(self):
+        for i in range(255):
+            if i < (128):       # First half of cycle, starts at zero brightness and moves up to 65535 (max).
+                self.led.duty_cycle = int(i * 65535 / (255/2)) # fade off
+            elif i == 128:      # Holds at max brightness for 1s
+               time.sleep(1)
+            else:               # Second half of cycle, starts at 65535 brightness (max) and moves down to zero.
+                self.led.duty_cycle = 65535 - int((i-128) * 65535 / (255/2))
+
+            time.sleep(0.01)    # Holds at min brightness for 1s
+```
+
+### Evidence
+
+![rgbFadeGif](https://github.com/jkrosby51/CircuitPython/blob/main/Images/ClassesGif.gif)
+
+### Wiring
+
+![rgbFadeWiring](https://github.com/jkrosby51/CircuitPython/blob/main/Images/RGBFadeWiring.jpg)
+
+### Reflection
+
+Modules and Classes are useful because they allow for simple repetition through the use of class objects to create variations of the original code without recoding anything.
+
 ## NextAssignment
 
 ### Description & Code
