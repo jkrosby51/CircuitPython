@@ -6,7 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Distance Sensor](#CircuitPython_Distance_Sensor)
 * [CircuitPython_Photointerrupter](#CircuitPython_Photointerrupter)
-* [RGB Fading LED](#RGB_Fading_LED)
+* [RGB_Fading_LED](#RGB_Fading_LED)
 ---
 
 
@@ -117,7 +117,7 @@ photo = interrupter.value
 The photointerrupter is a useful way to take inputs. In order to code the counter I had to make sure that it only counted when the sensor noticed a change in states, which I showed above.
 
 
-## RGB Fading LED
+## RGB_Fading_LED
 
 ### Description & Code
 This assignment was to create a module with a class which could be used to make an RGB LED fade on and off.
